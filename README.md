@@ -1,11 +1,8 @@
-## My Project
+## Amazon Connect Workshops
 
-TODO: Fill this README out!
+This repository is a collection of code snippets used in the various Amazon Connect Workshops. You can find the workshops [here](https://workshops.aws/).
 
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+This repository is organised in separate directories, each directory is self contained and contains the code snippets for that particular workshop.
 
 ## Security
 
