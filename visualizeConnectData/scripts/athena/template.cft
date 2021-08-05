@@ -1,0 +1,143 @@
+Description: Creates a database and table
+
+Parameters:       
+    Prefix:
+        Description: Prefix for resources
+        Type: String
+        
+    LambdaDeployS3Bucket:
+        Description: Bucket where the Lambda Zip file is located
+        Type: String
+        
+    UpdateCtrModifiedPartitionsLambdaKey:
+        Description: Key where the Lambda Zip file is located
+        Type: String
+        
+    AthenaDatabaseName:
+        Description: Database name
+        Type: String    
+        
+    AthenaTableName:
+        Description: Table name
+        Type: String  
+        
+    CTRS3Bucket:
+        Description: CTR S3 Bucket Name
+        Type: String
+        
+    CTRModifiedS3Folder:
+        Description: Where lambda will put the modified records
+        Type: String
+
+Resources:
+    AthenaBucket:
+        Type: AWS::S3::Bucket
+        DeletionPolicy: Retain
+        Properties:
+            BucketName: !Join ["-", [!Ref Prefix, athenaoutput, !Select [2, !Split [/, !Ref AWS::StackId ]]]]
+
+    ConnectDatabase:
+        Type: AWS::Glue::Database
+        Properties: 
+            CatalogId: !Ref AWS::AccountId
+            DatabaseInput: 
+                Name: !Ref AthenaDatabaseName
+                
+    UpdateCtrModifiedPartitionsLambda:
+        Type: AWS::Lambda::Function
+        Properties: 
+            Code:
+                S3Bucket: !Ref LambdaDeployS3Bucket
+                S3Key: !Ref UpdateCtrModifiedPartitionsLambdaKey
+            Environment:
+                Variables:
+                    LOG_LEVEL: INFO
+                    S3Bucket: !Ref CTRS3Bucket
+                    S3KeyPrefix: !Ref CTRModifiedS3Folder
+                    AthenaDB: !Ref ConnectDatabase
+                    AthenaOutput: !Ref AthenaBucket
+            FunctionName: !Join ["", [!Ref Prefix, UpdateCtrModifiedPartitions]]
+            Handler: lambda_function.lambda_handler
+            MemorySize: 128
+            PackageType: Zip
+            Runtime: python3.8
+            Timeout: 3
+            Role: !GetAtt UpdateCtrModifiedPartitionsLambdaRole.Arn
+            
+    UpdateCtrModifiedPartitionsLambdaRole:
+        Type: AWS::IAM::Role
+        Properties:     
+            AssumeRolePolicyDocument:
+                Version: 2012-10-17
+                Statement:
+                -   Effect: Allow
+                    Principal:
+                        Service: lambda.amazonaws.com
+                    Action: sts:AssumeRole
+            Path: /
+            Policies:
+                -   PolicyName: !Join ["", [!Ref Prefix, UpdateCtrModifiedPartitionsLambdaPolicy]]
+                    PolicyDocument:
+                        Version: 2012-10-17
+                        Statement:
+                        -   Effect: Allow
+                            Action:
+                            -   logs:CreateLogGroup
+                            -   logs:CreateLogStream
+                            -   logs:PutLogEvents
+                            Resource: "*"
+                        -   Effect: Allow
+                            Action:
+                            -   glue:GetDatabase
+                            -   glue:GetTable
+                            -   glue:UpdateTable
+                            -   glue:GetPartitions
+                            -   glue:CreatePartition
+                            -   glue:BatchCreatePartition
+                            -   athena:StartQueryExecution
+                            Resource:
+                            -   !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:catalog
+                            -   !Sub arn:aws:athena:${AWS::Region}:${AWS::AccountId}:workgroup/*
+                            -   !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:database/${ConnectDatabase}
+                            -   !Sub arn:aws:glue:${AWS::Region}:${AWS::AccountId}:table/${ConnectDatabase}/${AthenaTableName}
+                        -   Effect: Allow
+                            Action:
+                            -   s3:ListBucket
+                            Resource: 
+                            -   !Sub arn:aws:s3:::${CTRS3Bucket}
+                        -   Effect: Allow
+                            Action:
+                            -   s3:PutObject
+                            Resource: 
+                            -   !Sub arn:aws:s3:::${AthenaBucket}/*
+    
+    UpdateCtrModifiedPartitionsCWRule:
+        Type: AWS::Events::Rule
+        Properties: 
+            ScheduleExpression: rate(1 minute)
+            State: ENABLED
+            Targets:
+            -   Arn: !GetAtt UpdateCtrModifiedPartitionsLambda.Arn
+                Id: !Ref UpdateCtrModifiedPartitionsLambda
+                Input: "{}"
+                
+    UpdateCtrModifiedPartitionsCWRulePermission:
+        Type: AWS::Lambda::Permission
+        Properties:
+            Action: lambda:InvokeFunction
+            FunctionName: !GetAtt UpdateCtrModifiedPartitionsLambda.Arn
+            Principal: events.amazonaws.com
+            SourceArn: !GetAtt UpdateCtrModifiedPartitionsCWRule.Arn
+            
+Outputs:
+    AthenaBucket:
+        Value: !Ref AthenaBucket
+        
+    ConnectDatabase:
+        Value: !Ref ConnectDatabase
+        
+    UpdateCtrModifiedPartitionsLambda:
+        Value: !Ref UpdateCtrModifiedPartitionsLambda
+        
+    UpdateCtrModifiedPartitionsCWRule:
+        Value: !Ref UpdateCtrModifiedPartitionsCWRule

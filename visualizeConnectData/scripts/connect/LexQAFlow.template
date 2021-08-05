@@ -1,0 +1,604 @@
+{
+    "Version": "2019-10-30",
+    "StartAction": "4b91ac61-2437-4a58-930a-d7c111f6d457",
+    "Metadata": {
+        "entryPointPosition": {
+            "x": 15,
+            "y": 15
+        },
+        "snapToGrid": false,
+        "ActionMetadata": {
+            "42b1ee0a-d745-41a9-9864-7a952e89a07f": {
+                "position": {
+                    "x": 326,
+                    "y": 333
+                },
+                "useDynamic": false
+            },
+            "8163dbe3-fab8-4a8e-9580-0b0485639206": {
+                "position": {
+                    "x": 548,
+                    "y": 1144
+                },
+                "useDynamic": false
+            },
+            "36f87a8f-dd71-429d-acb1-6b0aab229c23": {
+                "position": {
+                    "x": 1998,
+                    "y": 171
+                }
+            },
+            "dfd591a7-06b8-4de5-81dd-bb8e69a1605c": {
+                "position": {
+                    "x": 564,
+                    "y": 305
+                },
+                "conditionMetadata": [{
+                        "id": "e69d98c9-3a76-449f-b92c-6f2d2a1ed3d0",
+                        "operator": {
+                            "name": "Equals",
+                            "value": "Equals",
+                            "shortDisplay": "="
+                        },
+                        "value": "1"
+                    }, {
+                        "id": "ea64f041-fcc5-42e9-a4ca-e26d1f2bebec",
+                        "operator": {
+                            "name": "Equals",
+                            "value": "Equals",
+                            "shortDisplay": "="
+                        },
+                        "value": "11"
+                    }, {
+                        "id": "7e337280-1be9-4408-991e-b26cd3bcd2e2",
+                        "operator": {
+                            "name": "Equals",
+                            "value": "Equals",
+                            "shortDisplay": "="
+                        },
+                        "value": "111"
+                    }, {
+                        "id": "5dcbe3b6-3d01-451a-aec6-3cbc297f2649",
+                        "operator": {
+                            "name": "Equals",
+                            "value": "Equals",
+                            "shortDisplay": "="
+                        },
+                        "value": "1111"
+                    }, {
+                        "id": "4be2db83-f8a6-4f86-a08a-a837ed8b762d",
+                        "operator": {
+                            "name": "Equals",
+                            "value": "Equals",
+                            "shortDisplay": "="
+                        },
+                        "value": "11111"
+                    }
+                ]
+            },
+            "2dc66a8f-7ecb-40e2-8075-033c2096b076": {
+                "position": {
+                    "x": 1285,
+                    "y": 56
+                },
+                "useDynamic": false
+            },
+            "a09b156e-1a7a-4712-b212-4526210422f0": {
+                "position": {
+                    "x": 1288,
+                    "y": 209
+                }
+            },
+            "82c3b828-426d-4d1f-89fb-f8fedf50271d": {
+                "position": {
+                    "x": 1283,
+                    "y": 408
+                }
+            },
+            "9d99ee16-301e-477f-89b6-d5e63152c8dc": {
+                "position": {
+                    "x": 1290,
+                    "y": 612
+                }
+            },
+            "9ed35ead-bff9-4326-b4b7-8646135e7d38": {
+                "position": {
+                    "x": 801,
+                    "y": 38
+                }
+            },
+            "cac4eabc-0436-4e49-9fef-6592d2c66319": {
+                "position": {
+                    "x": 804,
+                    "y": 239
+                }
+            },
+            "40a3c97e-a920-41f5-9e00-03571b04e5c9": {
+                "position": {
+                    "x": 794,
+                    "y": 437
+                }
+            },
+            "1c6668f1-efd1-4a86-a757-10003b9bde3f": {
+                "position": {
+                    "x": 802,
+                    "y": 638
+                }
+            },
+            "854d251f-5c47-4d50-9a57-3214d9148e04": {
+                "position": {
+                    "x": 811,
+                    "y": 837
+                }
+            },
+            "8a1043b6-48e5-40c6-8bca-9234143161c4": {
+                "position": {
+                    "x": 1294,
+                    "y": 1013
+                }
+            },
+            "cb0a6fe5-f278-4ee5-8a1a-4def82536df6": {
+                "position": {
+                    "x": 54,
+                    "y": 521
+                }
+            },
+            "4b91ac61-2437-4a58-930a-d7c111f6d457": {
+                "position": {
+                    "x": 48,
+                    "y": 167
+                }
+            },
+            "9d4a2ebb-be2e-470b-ae27-77e154bf4db1": {
+                "position": {
+                    "x": 47,
+                    "y": 333
+                },
+                "useDynamic": false
+            },
+            "872657c6-d4f0-442e-b013-040f6bb07b45": {
+                "position": {
+                    "x": 1527,
+                    "y": 32
+                }
+            },
+            "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552": {
+                "position": {
+                    "x": 1774,
+                    "y": 18
+                },
+                "useDynamic": false
+            },
+            "a3280e46-526f-4e7c-99e3-c6c27d90d597": {
+                "position": {
+                    "x": 1050,
+                    "y": 363
+                },
+                "conditionMetadata": [{
+                        "id": "15efd0f2-c574-400c-be76-c5d1c8ddc4ef",
+                        "value": "QAFallback"
+                    }, {
+                        "id": "b9bf44e5-36af-4324-8df1-bd717f589dcc",
+                        "value": "QACity"
+                    }, {
+                        "id": "6c4ae282-754c-4b64-b6a2-433862b72f24",
+                        "value": "QAColor"
+                    }, {
+                        "id": "f76846d2-20d1-4e0b-bff3-c08c01f62339",
+                        "value": "QADate"
+                    }, {
+                        "id": "5d62c7ad-fd25-41bc-bf15-83eb1652bc05",
+                        "value": "QADuration"
+                    }, {
+                        "id": "e4cb4c56-a5e8-4e9a-bf13-02d3c02a47fe",
+                        "value": "QAFood"
+                    }
+                ],
+                "useDynamic": true,
+                "dynamicMetadata": {}
+            },
+            "cb1e92ec-7b3b-414a-a8fd-070cff5b7e74": {
+                "position": {
+                    "x": 1289.14990234375,
+                    "y": 817.6499633789062
+                }
+            }
+        }
+    },
+    "Actions": [{
+            "Identifier": "42b1ee0a-d745-41a9-9864-7a952e89a07f",
+            "Parameters": {
+                "LoopCount": "5"
+            },
+            "Transitions": {
+                "NextAction": "8163dbe3-fab8-4a8e-9580-0b0485639206",
+                "Errors": [],
+                "Conditions": [{
+                        "NextAction": "8163dbe3-fab8-4a8e-9580-0b0485639206",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["DoneLooping"]
+                        }
+                    }, {
+                        "NextAction": "dfd591a7-06b8-4de5-81dd-bb8e69a1605c",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["ContinueLooping"]
+                        }
+                    }
+                ]
+            },
+            "Type": "Loop"
+        }, {
+            "Identifier": "8163dbe3-fab8-4a8e-9580-0b0485639206",
+            "Parameters": {
+                "Text": "Thank you for answering the questions"
+            },
+            "Transitions": {
+                "NextAction": "36f87a8f-dd71-429d-acb1-6b0aab229c23",
+                "Errors": [],
+                "Conditions": []
+            },
+            "Type": "MessageParticipant"
+        }, {
+            "Identifier": "36f87a8f-dd71-429d-acb1-6b0aab229c23",
+            "Type": "DisconnectParticipant",
+            "Parameters": {},
+            "Transitions": {}
+        }, {
+            "Identifier": "dfd591a7-06b8-4de5-81dd-bb8e69a1605c",
+            "Parameters": {
+                "ComparisonValue": "$.Attributes.udCounter"
+            },
+            "Transitions": {
+                "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingCondition"
+                    }
+                ],
+                "Conditions": [{
+                        "NextAction": "9ed35ead-bff9-4326-b4b7-8646135e7d38",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["1"]
+                        }
+                    }, {
+                        "NextAction": "cac4eabc-0436-4e49-9fef-6592d2c66319",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["11"]
+                        }
+                    }, {
+                        "NextAction": "40a3c97e-a920-41f5-9e00-03571b04e5c9",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["111"]
+                        }
+                    }, {
+                        "NextAction": "1c6668f1-efd1-4a86-a757-10003b9bde3f",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["1111"]
+                        }
+                    }, {
+                        "NextAction": "854d251f-5c47-4d50-9a57-3214d9148e04",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["11111"]
+                        }
+                    }
+                ]
+            },
+            "Type": "Compare"
+        }, {
+            "Identifier": "2dc66a8f-7ecb-40e2-8075-033c2096b076",
+            "Parameters": {
+                "Text": "Fallback intent was returned.  Let's try another question"
+            },
+            "Transitions": {
+                "NextAction": "872657c6-d4f0-442e-b013-040f6bb07b45",
+                "Errors": [],
+                "Conditions": []
+            },
+            "Type": "MessageParticipant"
+        }, {
+            "Identifier": "a09b156e-1a7a-4712-b212-4526210422f0",
+            "Parameters": {
+                "Attributes": {
+                    "udCity": "$.Lex.Slots.City"
+                }
+            },
+            "Transitions": {
+                "NextAction": "872657c6-d4f0-442e-b013-040f6bb07b45",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "82c3b828-426d-4d1f-89fb-f8fedf50271d",
+            "Parameters": {
+                "Attributes": {
+                    "udColor": "$.Lex.Slots.Color"
+                }
+            },
+            "Transitions": {
+                "NextAction": "872657c6-d4f0-442e-b013-040f6bb07b45",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "9d99ee16-301e-477f-89b6-d5e63152c8dc",
+            "Parameters": {
+                "Attributes": {
+                    "udDOB": "$.Lex.Slots.Date"
+                }
+            },
+            "Transitions": {
+                "NextAction": "872657c6-d4f0-442e-b013-040f6bb07b45",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "9ed35ead-bff9-4326-b4b7-8646135e7d38",
+            "Parameters": {
+                "Attributes": {
+                    "udPlay": "What is your favorite US city?"
+                }
+            },
+            "Transitions": {
+                "NextAction": "a3280e46-526f-4e7c-99e3-c6c27d90d597",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "cac4eabc-0436-4e49-9fef-6592d2c66319",
+            "Parameters": {
+                "Attributes": {
+                    "udPlay": "What is your favorite color?"
+                }
+            },
+            "Transitions": {
+                "NextAction": "a3280e46-526f-4e7c-99e3-c6c27d90d597",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "40a3c97e-a920-41f5-9e00-03571b04e5c9",
+            "Parameters": {
+                "Attributes": {
+                    "udPlay": "What is your date of birth?"
+                }
+            },
+            "Transitions": {
+                "NextAction": "a3280e46-526f-4e7c-99e3-c6c27d90d597",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "1c6668f1-efd1-4a86-a757-10003b9bde3f",
+            "Parameters": {
+                "Attributes": {
+                    "udPlay": "How much time have you spent on this project?"
+                }
+            },
+            "Transitions": {
+                "NextAction": "a3280e46-526f-4e7c-99e3-c6c27d90d597",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "854d251f-5c47-4d50-9a57-3214d9148e04",
+            "Parameters": {
+                "Attributes": {
+                    "udPlay": "What is your favorite food?"
+                }
+            },
+            "Transitions": {
+                "NextAction": "a3280e46-526f-4e7c-99e3-c6c27d90d597",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "8a1043b6-48e5-40c6-8bca-9234143161c4",
+            "Parameters": {
+                "Attributes": {
+                    "udFood": "$.Lex.Slots.Food"
+                }
+            },
+            "Transitions": {
+                "NextAction": "872657c6-d4f0-442e-b013-040f6bb07b45",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "cb0a6fe5-f278-4ee5-8a1a-4def82536df6",
+            "Parameters": {
+                "Attributes": {
+                    "udCounter": "1"
+                }
+            },
+            "Transitions": {
+                "NextAction": "42b1ee0a-d745-41a9-9864-7a952e89a07f",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "4b91ac61-2437-4a58-930a-d7c111f6d457",
+            "Parameters": {
+                "FlowLoggingBehavior": "Enabled"
+            },
+            "Transitions": {
+                "NextAction": "9d4a2ebb-be2e-470b-ae27-77e154bf4db1",
+                "Errors": [],
+                "Conditions": []
+            },
+            "Type": "UpdateFlowLoggingBehavior"
+        }, {
+            "Identifier": "9d4a2ebb-be2e-470b-ae27-77e154bf4db1",
+            "Parameters": {
+                "Text": "Welcome to the question and answer bot.  I'm going to ask you a few questions."
+            },
+            "Transitions": {
+                "NextAction": "cb0a6fe5-f278-4ee5-8a1a-4def82536df6",
+                "Errors": [],
+                "Conditions": []
+            },
+            "Type": "MessageParticipant"
+        }, {
+            "Identifier": "872657c6-d4f0-442e-b013-040f6bb07b45",
+            "Parameters": {
+                "Attributes": {
+                    "udCounter": "1$.Attributes.udCounter"
+                }
+            },
+            "Transitions": {
+                "NextAction": "42b1ee0a-d745-41a9-9864-7a952e89a07f",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }, {
+            "Identifier": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+            "Parameters": {
+                "Text": "An error occurred"
+            },
+            "Transitions": {
+                "NextAction": "36f87a8f-dd71-429d-acb1-6b0aab229c23",
+                "Errors": [],
+                "Conditions": []
+            },
+            "Type": "MessageParticipant"
+        }, {
+            "Identifier": "a3280e46-526f-4e7c-99e3-c6c27d90d597",
+            "Parameters": {
+                "Text": "$.Attributes.udPlay",
+                "LexBot": {
+                    "Name": "QA",
+                    "Region": "<<AwsRegion>>",
+                    "Alias": "prod"
+                }
+            },
+            "Transitions": {
+                "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }, {
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingCondition"
+                    }
+                ],
+                "Conditions": [{
+                        "NextAction": "2dc66a8f-7ecb-40e2-8075-033c2096b076",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["QAFallback"]
+                        }
+                    }, {
+                        "NextAction": "a09b156e-1a7a-4712-b212-4526210422f0",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["QACity"]
+                        }
+                    }, {
+                        "NextAction": "82c3b828-426d-4d1f-89fb-f8fedf50271d",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["QAColor"]
+                        }
+                    }, {
+                        "NextAction": "9d99ee16-301e-477f-89b6-d5e63152c8dc",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["QADate"]
+                        }
+                    }, {
+                        "NextAction": "cb1e92ec-7b3b-414a-a8fd-070cff5b7e74",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["QADuration"]
+                        }
+                    }, {
+                        "NextAction": "8a1043b6-48e5-40c6-8bca-9234143161c4",
+                        "Condition": {
+                            "Operator": "Equals",
+                            "Operands": ["QAFood"]
+                        }
+                    }
+                ]
+            },
+            "Type": "ConnectParticipantWithLexBot"
+        }, {
+            "Identifier": "cb1e92ec-7b3b-414a-a8fd-070cff5b7e74",
+            "Parameters": {
+                "Attributes": {
+                    "udProjectTime": "$.Lex.Slots.Duration"
+                }
+            },
+            "Transitions": {
+                "NextAction": "872657c6-d4f0-442e-b013-040f6bb07b45",
+                "Errors": [{
+                        "NextAction": "cedef2dd-b69a-40d4-b8ae-3b8deb5a4552",
+                        "ErrorType": "NoMatchingError"
+                    }
+                ],
+                "Conditions": []
+            },
+            "Type": "UpdateContactAttributes"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+flatten_json.py,sha256=H1Ya3Vs1cRvwthEFHVp9msSNnedjLoZCnqawhOxLbFE,16147
+util.py,sha256=IHoINidlUejtOFmj99a1s7oyiNpCz2r7smCCFe0rzVg,295
+flatten_json-0.1.7.dist-info/LICENSE,sha256=C6du_CJSmSUfy-HPLFh9Wo7ODjgEm7Gpwo3letDow5Q,1066
+flatten_json-0.1.7.dist-info/METADATA,sha256=ox34B_q30bgci0UtORvKgv5P6NUYYiKNFh-xVssjEDs,254
+flatten_json-0.1.7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+flatten_json-0.1.7.dist-info/entry_points.txt,sha256=y08V_Ek13qzcdiKgZqRa3nzfum1lm1RK5OO8iGDNmCY,51
+flatten_json-0.1.7.dist-info/top_level.txt,sha256=G-ogAt8qjifDwF77r6YraPKrdu7HfgtA9CvkFiaTIQQ,18
+flatten_json-0.1.7.dist-info/RECORD,,
+../../bin/flatten_json,sha256=jdWlR7JswY4U1_z_kROUwvxY93LHdFuc0FZ1KhZSyeA,213
+flatten_json-0.1.7.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+__pycache__/flatten_json.cpython-37.pyc,,
+__pycache__/util.cpython-37.pyc,,
