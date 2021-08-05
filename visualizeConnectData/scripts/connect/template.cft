@@ -1,0 +1,17 @@
+Description: This template creates the S3 bucket that Connect will use
+
+Parameters:       
+    Prefix:
+        Description: Prefix for resources
+        Type: String
+
+Resources:
+    ConnectBucket:
+        Type: AWS::S3::Bucket
+        DeletionPolicy: Retain
+        Properties:
+            BucketName: !Join ["-", [!Ref Prefix, connect, !Select [2, !Split [/, !Ref AWS::StackId ]]]]
+            
+Outputs:
+    ConnectBucket:
+        Value: !Ref ConnectBucket

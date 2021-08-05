@@ -1,0 +1,17 @@
+Description: This template creates the S3 bucket to deploy lambda functions
+
+Parameters:       
+    Prefix:
+        Description: Prefix for resources
+        Type: String
+
+Resources:
+    LambdaBucket:
+        Type: AWS::S3::Bucket
+        DeletionPolicy: Retain
+        Properties:
+            BucketName: !Join ["-", [!Ref Prefix, lambdadeploy, !Select [2, !Split [/, !Ref AWS::StackId ]]]]
+            
+Outputs:
+    LambdaBucket:
+        Value: !Ref LambdaBucket
