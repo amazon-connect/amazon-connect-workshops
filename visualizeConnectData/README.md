@@ -1,5 +1,5 @@
 # Welcome to Visualize Amazon Connect Contact Trace Records using Amazon QuickSight Workshop
-This repository contains the files used in the Visualize Amazon Connect Contact Trace Records using Amazon QuickSight Workshop.  A link will be provided in a few days.  The repository contains two folders:
+This repository contains the files used in the [Visualize Amazon Connect Contact Trace Records using Amazon QuickSight Workshop](https://catalog.us-east-1.prod.workshops.aws/v2/workshops/607718a8-cddd-416a-97b4-4fc9dc93ff7a/en-US/).  The repository contains two folders:
 1. scripts - This contains Bash, Python, and CloudFormation scripts that will be executed during the workshop.  The folders represent the functionality that the workshop deploys
 1. lambdas - This contains the lambda functions that will be deployed by the scripts
 
